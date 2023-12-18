@@ -1,10 +1,19 @@
+import java.util.List;
+import java.util.Map;
+
 public abstract class Pokemon {
-    String name;
-    int level;
-    int hp;
-    String food;
-    String sound;
-    String type;
+    private final String name;
+    private final int level;
+    private int hp;
+    private final String food;
+    private final String sound;
+    private final String type;
+
+//    5 private final variabelen
+//    1 private variabele
+//    1 constructor
+//    6 getters
+//    1 setter
 
     public Pokemon(String name, int level, int hp, String food, String sound, String type) {
         this.name = name;
@@ -19,16 +28,8 @@ public abstract class Pokemon {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getLevel() {
         return level;
-    }
-
-    public void setLevel(int level) {
-        this.level = level;
     }
 
     public int getHp() {
@@ -43,23 +44,11 @@ public abstract class Pokemon {
         return food;
     }
 
-    public void setFood(String food) {
-        this.food = food;
-    }
-
     public String getSound() {
         return sound;
     }
 
-    public void setSound(String sound) {
-        this.sound = sound;
-    }
-
     public String getType() {
         return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
     }
 }

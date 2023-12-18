@@ -1,21 +1,26 @@
+import java.util.Arrays;
+import java.util.List;
+
 public class FirePokemon extends Pokemon {
-    boolean attacks;
+    private static final String type = "fire";
+    List<String> attacks = Arrays.asList("Inferno", "PyroBall", "FireLash", "FlameThrower");
     public FirePokemon(String name, int level, int hp, String food, String sound) {
-        super(name, level, hp, food, sound);
+        super(name, level, hp, food, sound, type);
     }
 
-    public boolean getAttacks() {
+    List<String> getAttacks() {
+       return attacks;
     }
 
-    public void inferno(Pokemon pokemon, Pokemon gymPokemon) {
+    public void inferno(Pokemon pokemon, Pokemon enemy) {
     }
 
-    public void pyroBall(Pokemon pokemon, Pokemon gymPokemon) {
+    public void pyroBall(Pokemon pokemon, Pokemon enemy) {
     }
 
-    public void fireLash(Pokemon pokemon, Pokemon gymPokemon) {
+    public void fireLash(Pokemon pokemon, Pokemon enemy) {
     }
 
-    public void flameThrower(Pokemon pokemon, Pokemon gymPokemon) {
+    public void flameThrower(Pokemon pokemon, Pokemon enemy) {
     }
 }
